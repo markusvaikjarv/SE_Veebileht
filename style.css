@@ -3,6 +3,17 @@
     padding-left: 90px;
     padding-right: 90px;
 }
+
+.navbar {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.navbar-item {
+    color: whitesmoke;
+}
+.navbar-dropdown {
+    background: rgba(0, 0, 0, 0.8);
+}
 @media screen and (max-width: 800px) {
     .sisu {
         padding-top: 20px;
