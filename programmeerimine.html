@@ -8,9 +8,9 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="shortcut icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/110px-Python-logo-notext.svg.png" />
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.10.7/typeit.min.js"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-	<script src="./js/main.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
 			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/110px-Python-logo-notext.svg.png"
 			 alt="Link: Pyhton.org" width="30" height="30">
 		</a>
-		<a href="tutvustus.html" class="navbar-item">Ajaloost ja installimine</a>
+		<a href="./tutvustus.html" class="navbar-item">Ajaloost ja installimine</a>
 		<div class="navbar-item has-dropdown has-dropdown-down is-hoverable">
 			<a class="navbar-item">
 				Pythonis programmeerimine
@@ -50,7 +50,7 @@
 	</nav>
 	<section class="section">
 		<div class="container sisu">
-			<h1 class="title">Sissejuhatus Pythonis programmeerimisse</h1>
+			<h1 class="title" id="pealkiri">Sissejuhatus Pythonis programmeerimisse</h1>
 			<h2 id="probleem" class="subtitle">
 				Kõige alus- probleem
 			</h2>
@@ -125,6 +125,9 @@
 			</article>
 		</div>
 	</section>
+	<script>
+		animeeri_element("pealkiri")
+	</script>
 </body>
 
 </html>
