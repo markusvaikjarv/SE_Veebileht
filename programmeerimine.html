@@ -1,11 +1,123 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Sissejuhatus programmeerimisse</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🐍Programmeerimine</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/110px-Python-logo-notext.svg.png" />
+
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="./main.js"></script>
 </head>
+
 <body>
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="dropdown navigation">
+    <a class="navbar-item logo" href="https://python.org">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/110px-Python-logo-notext.svg.png"
+        alt="Link: Pyhton.org" width="30" height="30">
+    </a>
+    <a href="tutvustus.html" class="navbar-item">Ajaloost ja installimine</a>
+    <div class="navbar-item has-dropdown has-dropdown-down is-hoverable">
+      <a class="navbar-item">
+        Pythonis programmeerimine
+      </a>
 
+      <div class="navbar-dropdown">
+        <a href="#probleem" class="navbar-item">
+          Kõige alus-probleem
+        </a>
+        <a href="#programm" class="navbar-item">
+          Programm
+        </a>
+        <a href="#andmetüübid" class="navbar-item">
+          Andmetüübid
+        </a>
+		 <a href="#muutuja" class="navbar-item">
+          Muutuja
+        </a>
+		 <a href="#sisend" class="navbar-item">
+          Kasutaja sisend
+        </a>
+		 <a href="#tingimus" class="navbar-item">
+          Tingimuslause
+        </a>
 
-
+      </div>
+    </div>
+  </nav>
+  <section class="section">
+    <div class="container sisu">
+      <h1 class="title">Sissejuhatus Pythonis programmeerimisse</h1>
+      <h2  id="probleem" class="subtitle">
+       Kõige alus- probleem
+      </h2>
+      <article>
+	  <p>Programmeerimine algab probleemist ja sellest, et soovitada saada lahendus probleemile. 
+		Selleks, et lahendad probleemi tuleks lahendus panna kirja samm-sammult ehk luua algoritm. 
+		Milline on esimene samm ja mis sellele järgneb, kuidas jõutakse lahenduseni. 
+		Näiteks võib võtta pannkoogi küpsetamise retsepti. 
+		Probleemiks on eluline puudujääk pannkookidest ja lahenduseks on taldriku täis maitsvaid pannkooke. </p><br>
+	<h2   id="programm" class="subtitle">Programm</h2>
+		<p>Algoritme saab kirja panna erinevalt tihti kasutatakse selleks plokkskeeme. 
+		Plokkskeemidest, aga arvuti aru ei saa. Seega tuleks probleemilahendus kirja panna programmina. 
+		Programmide kirjutamiseks on olemas erinevad keeled, näiteks HTML, C++, Java või Python. <br>
+		Sellel veebilehel me õpetame kuidas kirjutada lihtsaid programme Pythonis.</p>
+		<h3>Esimene programm</h3>
+			<code>print("Tere!")</code>
+			<p>See on väga lihtne üherealine programm.<br>
+			See toob ekraanile:<br>
+					 <samp>Tere!</samp></p><br>
+	<h2  id="andmetüübid" class="subtitle">Andmetüübid</h2>
+		<p>Python saab aru 4 erinevast andmetüübist</p>
+	<ul>
+		<ol>
+			<li> Täisarvud (int). Näiteks <code>1; 42; 10200222</code></li>
+			<li>Ujukomagaarvud (float). Näiteks <code>1.4; 54.123 </code>(komana kasutatakse punkti)</li>
+			<li>Sõne ehk tekst (str). Näiteks <code>"Tere"; "Nööp"</code></li>
+			<li>Tõeväärtus (bool). <code>True False</code></li>
+		</ol>
+	</ul>
+	<p>Selleks, et teada saada,mis tüüpi väärtustega meil tegu on, tuelb kasutada käsku <code>type(<em>Väärtus mille tüüpi soovite teada</em>)</code><br>
+	Katseta ise:<br></p>
+	<img src="type.jpg" alt="Erinevad tüübid"width="200" height="100"><br>
+	<p>Nagu näha võis, siis viimane andis errori</p>
+	<img src="error.jpg" alt="error"><br>
+	<p>See näitab, et koma kasutatakse Pythonis kahe elemendi eraldamiseks, mitte ujukomaga arvu esitamiseks.  Ja jutumärgid ümber arvu, muudavad arvu sõneks. </p>
+ 	<br>
+	<h2 id="muutuja"class="subtitle">Muutuja</h2>
+	<p>Pythonis on muutuja põhimõtteliselt nagu nimi või aadress, mille abil saadakse õige info kätte. Muutujal on erinevad eeskirjad, kuidas seda luua. 
+	Näiteks ei tohi muutuja alata numbriga ega sisaldada tühikuid
+	(nende asemel võib kasutada alakriipsu „_“ nt <code>minu_muutuja</code>). Muutuja ei tohi olla ka mingi Pythoni funktsioon nt <code> print, and, if</code>jne.</p>
+	<br>
+	<h2 id="sisend" class="subtitle">Sisend kasutajalt</h2>
+	<p>Programm saab andmeid küsida ka kasutajalt. Selleks saab kasutada käsku <ode >input()</ode>.
+		Kasutaja poolt sisestatu saab anda muutujale väärtuseks.
+			Sisendile võib anda muuta kohe vastavaks andme tüübiks. <br>Kui küsite kasutajalt numbrit siis
+			<code>int(input("Kirjuta üks number: “))</code><br>
+			<br>
+	<h2 id="tingimus" class="subtitle">Tingimuslause</h2>
+	<p>Tingimuslauses on kesksel kohal tingimus, mille alusel otsustatakse, kuidas programm edasi töötab. 
+	Tingimus on esitatud tõeväärtuse tüüpi avaldisena, mille väärtus on tõene (<code>True</code>) või väär (<code>False</code>) - tingimus on täidetud või ei ole täidetud.<br>
+Tingimusi saab (muuhulgas) moodustada järgmiste märkidega:<br>
+<ul><li><code><, >, <=,=></code> võrratuste kehtivuse kontollimiseks</li>
+	<li><code>==</code>võrduse kontrollimiseks</li>
+	<li><code>!=</code>mitte võrduse kontrollimiseks</li>
+</ul><br>
+<h2 class="subtitle">Kokkuvõte</h2>
+<p>See on esimene ülevaade erinevatest andmetüüpidest ja tehetest, mida saab Pythonis teha. 
+Python on väga võimekas ja suhteliselt kerge keel, mille õppimine on kõigile kasulik. See siinne leht on vaid väike ülevaade mõnedest asjadest, mida on võimalik Pythoniga teha.</p>
+	
+        
+      </article>
+    </div>
+  </section>
 </body>
+
 </html>
+
+
+
+
