@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>🐍Lisapakettide paigaldamine</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="shortcut icon" type="image/png" href="./static/favicon.png" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.10.7/typeit.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
+</head>
+
+<body>
+<nav class="navbar is-fixed-top" role="navigation" aria-label="dropdown navigation">
+		<a class="navbar-item logo" href="https://python.org">
+			<img src="./static/favicon.png" alt="Link: Pyhton.org" width="30" height="30">
+		</a>
+		<a class="navbar-item">Ajaloost ja installimine</a>
+		<div class="navbar-item has-dropdown has-dropdown-down is-hoverable">
+			<a href="programmeerimine.html" class="navbar-item">
+				Pythonis programmeerimine
+			</a>
+
+			<div class="navbar-dropdown">
+				<a href="./programmeerimine.html#probleem" class="navbar-item">
+					Kõige alus-probleem
+				</a>
+				<a href="./programmeerimine.html#programm" class="navbar-item">
+					Programm
+				</a>
+				<a href="./programmeerimine.html#andmetüübid" class="navbar-item">
+					Andmetüübid
+				</a>
+				<a href="./programmeerimine.html#muutuja" class="navbar-item">
+					Muutuja
+				</a>
+				<a href="./programmeerimine.html#sisend" class="navbar-item">
+					Kasutaja sisend
+				</a>
+				<a href="./programmeerimine.html#tingimus" class="navbar-item">
+					Tingimuslause
+				</a>
+
+			</div>
+		</div>
+        <a href="./Lisa.html" class="navbar-item">Lisa</a>
+	</nav>
+	<section class="section">
+		<div class="container sisu">
+			<h1 class="title" id="pealkiri">Lisa</h1>
+			<h2 id="probleem" class="subtitle">
+				Lisapakettide paigaldamine
+			</h2>
+			<article>
+				<p> Lisaks sellele, et Pythonil on mahukas standardteek, on talle loodud ka väga palju 
+					lisapakette erinevate ülesannete lahendamiseks. Pythoni lisapaketinduse keskmeks on 
+					PyPI – Python Package Index. Tegemist on andmebaasiga, kuhu lisapakettide loojad 
+					saavad enda paketid koos kirjeldusega üles laadida ning kust pakettide kasutajad 
+					saavad pakette alla laadida ja enda arvutisse paigaldada. Pakettide loomise kohta 
+					leiad infot Python Packaging Guide’ist, aga siin vaatame kuidas olemasolevaid pakette kasutada.
+					pip (Linuxi ja Mac-i puhul ka pip3) on käsurea programm, mis oskab PyPI-st pakette alla tõmmata
+					ja sinu arvutisse installida. Kui pakett sõltub veel mõnest paketist, siis installitakse ka see jne.
+					Uuemate Pythoni versioonidega (ja ka Thonnyga) on pip enamasti kaasas, seega pip-i enda paigaldamise pärast ei ole sul 
+					tõenäoliselt vaja muretseda. Küll aga on vaja teada kuidas pip-i käivitada.
+					Kui käsk pip on PATH-is, siis piisab uue paketi installimiseks käsust kujul pip install (paketi nimi) või pip3 install (paketi nimi)
+					(nt. pip install pygame). Vastasel juhul tuleb näidata käsu pip asukoht, nt. C:\Python34\Scripts\pip install pygame.
+					Paketi eemaldamiseks on pip-is alamkäsk unistall – nt. pip uninstall pygame
+					Kui süsteemi käsurida avada Thonny kaudu (Tools → Open system shell), siis mitme interpretaatori ja PATH-i pärast muretsema ei pea,
+					sest Thonny suudab käsurea seadistada nii, et lühikese nimega on kättesaadav õige pip.
+				</p><br>
+			
+			</article>
+		</div>
+	</section>
+	<script>
+		animeeri_element("pealkiri")
+	</script>
+</body>
+
+</html>
